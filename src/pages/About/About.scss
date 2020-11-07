@@ -25,3 +25,33 @@
         color: $secondary-color;
     }
 }
+
+footer {
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    grid-row-start: 4;
+}
+
+@media screen and (max-width: 850px){
+    .About {
+        background-color: $primary-color;
+        grid-template-columns: 1fr minmax(360px, 1fr) 1fr;
+        grid-template-rows: 75px minmax(360px, 1fr) minmax(400px, 1fr) 75px;
+        header {
+            grid-column-start: 2;
+            grid-column-end: 2;
+        }
+    }
+
+    .main-image {
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
+    footer {
+        grid-column-start: 2;
+        grid-column-end: 2;
+    }
+
+}

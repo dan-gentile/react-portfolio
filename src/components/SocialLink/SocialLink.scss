@@ -13,3 +13,19 @@
         }
     }
 }
+
+@media screen and (max-width: 850px) {
+    .social {
+        @include flexbox-center;
+        &-item {
+            margin: 4px;
+            color: $secondary-color;
+            &>a {
+                color: $secondary-color;
+            }
+            &>a:hover {
+                color: $secondary-color;
+            }
+        }
+    }
+}

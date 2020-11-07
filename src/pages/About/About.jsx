@@ -16,8 +16,8 @@ export default function About() {
         <img
           className="image"
           src={image}
-          width="320px"
-          height="320px"
+          width="280px"
+          height="280px"
           alt="profile"
         />
         <div className="skills">

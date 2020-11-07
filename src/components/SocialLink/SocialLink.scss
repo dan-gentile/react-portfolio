@@ -1,0 +1,15 @@
+@import '../../App.scss';
+
+.social {
+    @include flexbox-left;
+    &-item {
+        margin: 1rem;
+        color: $primary-color;
+        &>a {
+            color: $link-color;
+        }
+        &>a:hover {
+            color: $primary-color;
+        }
+    }
+}

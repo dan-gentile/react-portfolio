@@ -1,0 +1,20 @@
+@import '../../App.scss';
+
+
+.About-Me {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: span 2;
+    @include flexbox-column-left;
+    margin: 1rem 2rem;
+  
+    .about {
+        line-height: 1.5rem;
+        padding: 12px 0;
+        .fun-fact {
+            margin: 2rem 0;
+            color: $link-color;
+        }
+    }
+}

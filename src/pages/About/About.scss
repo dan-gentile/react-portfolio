@@ -1,0 +1,27 @@
+@import '../../App.scss';
+
+.About {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr minmax(360px, 1fr) minmax(360px, 1fr) 1fr;
+    grid-template-rows: 75px minmax(340px, 1fr) minmax(340px, 1fr) 80px;
+    background-color: $background-color;
+    font-family: open-sans, sans-serif;
+    color: $primary-color;
+}
+
+.main-image {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: span 2;
+    @include flexbox-column-center;
+    .image {
+        border-radius: 100%;
+    }
+    .skills {
+        text-align: center;
+        margin-top: 10px;
+        color: $secondary-color;
+    }
+}

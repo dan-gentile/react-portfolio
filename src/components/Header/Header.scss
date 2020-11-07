@@ -1,0 +1,15 @@
+@import '../../App.scss';
+
+header {
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    grid-row-start: 1;
+    grid-row-end: span 1;
+    z-index: 1;
+
+    .logo {
+        height: 75px;
+        @include flexbox-center;
+        background-color: $primary-color;
+    }
+}

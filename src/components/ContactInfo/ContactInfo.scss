@@ -1,0 +1,6 @@
+@import '../../App.scss';
+
+.details {
+    @include flexbox-column-left;
+    margin: 1rem 0;
+}

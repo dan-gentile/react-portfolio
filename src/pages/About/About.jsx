@@ -9,7 +9,7 @@ import image from "../../Assets/profilepicture.jpg";
 export default function About() {
   return (
     <div className="About">
-      <Header />
+      <Header header="index-header" />
       <Aside />
       <AboutMe />
       <div className="main-image">
@@ -25,7 +25,7 @@ export default function About() {
           <p>Node JS // Express JS // MongoDB</p>
         </div>
       </div>
-      <Footer />
+      <Footer footer="index-footer" />
     </div>
   );
 }

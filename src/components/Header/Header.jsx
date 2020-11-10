@@ -2,9 +2,9 @@ import React from "react";
 import "./Header.scss";
 import logo from "../../Assets/roadiecoffee.svg";
 
-export default function Header() {
+export default function Header(props) {
   return (
-    <header>
+    <header className={props.header}>
       <div className="logo">
         <img
           src={logo}

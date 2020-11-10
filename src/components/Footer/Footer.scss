@@ -1,5 +1,11 @@
-@import '../../App.scss';
-.footer {
-    @include flexbox-center;
-    color: $secondary-color;
+@import "../../App.scss";
+.index-footer {
+  @include flexbox-center;
+  color: $secondary-color;
+}
+
+.projects-footer {
+  background-color: $primary-color;
+  @include flexbox-center;
+  color: $secondary-color;
 }

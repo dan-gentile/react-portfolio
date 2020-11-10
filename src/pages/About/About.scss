@@ -1,57 +1,58 @@
-@import '../../App.scss';
+@import "../../App.scss";
 
 .About {
-    display: grid;
-    height: 100vh;
-    grid-template-columns: 1fr minmax(360px, 1fr) minmax(360px, 1fr) 1fr;
-    grid-template-rows: 75px minmax(340px, 1fr) minmax(340px, 1fr) 80px;
-    background-color: $background-color;
-    font-family: open-sans, sans-serif;
-    color: $primary-color;
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr minmax(360px, 1fr) minmax(360px, 1fr) 1fr;
+  grid-template-rows: 75px minmax(340px, 1fr) minmax(340px, 1fr) 75px;
+  background-color: $background-color;
+  font-family: open-sans, sans-serif;
+  color: $primary-color;
+}
+
+.index-header {
+  grid-column-start: 1;
+  grid-column-end: span 2;
+  grid-row-start: 1;
+  grid-row-end: span 1;
+  z-index: 1;
 }
 
 .main-image {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: span 2;
+  @include flexbox-column-center;
+  .image {
+    border-radius: 100%;
+  }
+  .skills {
+    text-align: center;
+    margin-top: 10px;
+    color: $secondary-color;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .About {
+    background-color: $primary-color;
+    grid-template-columns: 1fr minmax(360px, 1fr) 1fr;
+    grid-template-rows: 75px minmax(360px, 1fr) minmax(400px, 1fr) 75px;
+    .index-header {
+      grid-column-start: 2;
+      grid-column-end: 2;
+    }
+  }
+
+  .main-image {
     grid-column-start: 2;
     grid-column-end: 2;
     grid-row-start: 2;
-    grid-row-end: span 2;
-    @include flexbox-column-center;
-    .image {
-        border-radius: 100%;
-    }
-    .skills {
-        text-align: center;
-        margin-top: 10px;
-        color: $secondary-color;
-    }
-}
-
-footer {
-    grid-column-start: 1;
-    grid-column-end: span 2;
-    grid-row-start: 4;
-}
-
-@media screen and (max-width: 850px){
-    .About {
-        background-color: $primary-color;
-        grid-template-columns: 1fr minmax(360px, 1fr) 1fr;
-        grid-template-rows: 75px minmax(360px, 1fr) minmax(400px, 1fr) 75px;
-        header {
-            grid-column-start: 2;
-            grid-column-end: 2;
-        }
-    }
-
-    .main-image {
-        grid-column-start: 2;
-        grid-column-end: 2;
-        grid-row-start: 2;
-        grid-row-end: 2;
-    }
-    footer {
-        grid-column-start: 2;
-        grid-column-end: 2;
-    }
-
+    grid-row-end: 2;
+  }
+  .index-footer {
+    grid-column-start: 2;
+    grid-column-end: 2;
+  }
 }

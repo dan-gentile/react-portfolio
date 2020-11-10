@@ -1,11 +1,29 @@
 @import "../../App.scss";
 .index-footer {
+  grid-column-start: 1;
+  grid-column-end: span 2;
+  grid-row-start: 4;
   @include flexbox-center;
   color: $secondary-color;
 }
 
 .projects-footer {
+  grid-column-start: 1;
+  grid-column-end: span 3;
+  grid-row-start: 5;
   background-color: $primary-color;
   @include flexbox-center;
   color: $secondary-color;
+}
+
+@media screen and (max-width: 850px) {
+  .index-footer {
+    grid-column-start: 2;
+    grid-column-end: 2;
+  }
+  .projects-footer {
+    grid-column-start: 1;
+    grid-column-end: span 3;
+    grid-row-start: 8;
+  }
 }

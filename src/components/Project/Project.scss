@@ -1,1 +1,50 @@
-@import '../../App.scss';
+@import "../../App.scss";
+
+.three {
+  grid-column-start: 1;
+  grid-column-end: span 3;
+  grid-row-start: 4;
+  grid-row-end: 4;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 320px;
+  padding: 1rem 0;
+  color: $primary-color;
+  .info {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    @include flexbox-column-center;
+    .links {
+      @include flexbox-center;
+      padding: 1rem;
+    }
+    .code {
+      @include flexbox-center;
+      color: $third-color;
+    }
+    .description {
+      text-align: center;
+      padding: 1rem;
+    }
+  }
+  .thumbnail {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    @include flexbox-center;
+    padding-bottom: 2rem;
+  }
+}
+
+.thumbnail-image {
+  border: 1px solid #ddd;
+  /* Gray border */
+  border-radius: 4px;
+  /* Rounded border */
+  padding: 5px;
+  /* Some padding */
+  width: 360px;
+  /* Set a small width */
+  &:hover {
+    box-shadow: 0 0 2px 1px rgba(51, 51, 51, 0.5);
+  }
+}

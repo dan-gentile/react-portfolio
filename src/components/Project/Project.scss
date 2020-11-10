@@ -1,4 +1,77 @@
 @import "../../App.scss";
+.one {
+  grid-column-start: 1;
+  grid-column-end: span 3;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 320px;
+  padding: 1rem 0;
+  color: $primary-color;
+  .info {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    @include flexbox-column-center;
+    .links {
+      @include flexbox-center;
+      padding: 1rem;
+    }
+    .code {
+      @include flexbox-center;
+      color: $third-color;
+    }
+    .description {
+      text-align: center;
+      padding: 1rem;
+    }
+  }
+  .thumbnail {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    @include flexbox-center;
+    padding-bottom: 2rem;
+  }
+}
+
+.two {
+  grid-column-start: 2;
+  grid-column-end: span 4;
+  grid-row-start: 3;
+  grid-row-end: 3;
+  background-color: $primary-color;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 320px;
+  padding: 1rem 0;
+  color: $secondary-color;
+  .info {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    @include flexbox-column-center;
+    h2 {
+      color: #e94560;
+    }
+    .links {
+      @include flexbox-center;
+      padding: 1rem;
+    }
+    .code {
+      @include flexbox-center;
+      color: #736ee0;
+    }
+    .description {
+      text-align: center;
+      padding: 1rem;
+    }
+  }
+  .thumbnail {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    @include flexbox-center;
+    padding-bottom: 2rem;
+  }
+}
 
 .three {
   grid-column-start: 1;

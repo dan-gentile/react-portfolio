@@ -13,7 +13,7 @@ export default function Project(props) {
           <li>
             <FontAwesomeIcon
               icon={faGithubAlt}
-              size="xl"
+              size="1x"
               style={{ marginRight: "4px" }}
             />
             <a href={props.gitHub} target="_blank" rel="noreferrer">
@@ -23,7 +23,7 @@ export default function Project(props) {
           <li>
             <FontAwesomeIcon
               icon={faDesktopAlt}
-              size="xl"
+              size="1x"
               style={{ marginRight: "4px", marginLeft: "4px" }}
             />
             <a href={props.website} target="_blank" rel="noreferrer">
@@ -35,7 +35,7 @@ export default function Project(props) {
           <FontAwesomeIcon icon={faCode} style={{ marginRight: "4px" }} />
           <p>{props.code}</p>
         </div>
-        <div class="description">
+        <div className="description">
           <p>{props.description}</p>
         </div>
       </div>

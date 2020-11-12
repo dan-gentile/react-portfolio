@@ -5,11 +5,13 @@ import AboutMe from "../../components/AboutMe/AboutMe";
 import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
 import image from "../../Assets/profilepicture.jpg";
+import Navbar from "../../components/Navbar/Navbar";
 
 export default function About() {
   return (
     <div className="About">
       <Header header="index-header" />
+      <Navbar />
       <Aside />
       <AboutMe />
       <div className="main-image">

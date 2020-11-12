@@ -8,11 +8,13 @@ import GymBroImage from "../../Assets/gymbro-screenshot.png";
 import "./Projects.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUmbrellaBeach } from "@fortawesome/free-solid-svg-icons";
+import Navbar from "../../components/Navbar/Navbar";
 
 export default function Projects() {
   return (
     <div className="Projects">
       <Header header="projects-header" />
+      <Navbar />
       <Project
         className="one"
         title={<FontAwesomeIcon icon={faUmbrellaBeach} size="1x" />}

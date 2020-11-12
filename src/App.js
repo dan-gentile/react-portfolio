@@ -6,7 +6,7 @@ import Projects from "./pages/Projects/Projects";
 function App() {
   return (
     <Router>
-      <div>
+      <div className="App">
         <Switch>
           <Route exact path="/" component={About} />
           <Route exact path="/projects" component={Projects} />

@@ -1,46 +1,50 @@
 @import url("https://use.typekit.net/xxl8dfr.css");
 
-
 // Global Variables and Mixins
 $primary-color: #333333;
 $secondary-color: #f0e9c8;
-$third-color:#5c4040;
+$third-color: #5c4040;
 $link-color: #696969;
-$background-color:#f2f2f2;
+$background-color: #f2f2f2;
 @mixin flexbox-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @mixin flexbox-column-center {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 @mixin flexbox-column-left {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 @mixin flexbox-left {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 @mixin transition-ease {
-    transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 // link styling
 a {
-    color: $link-color;
-    &:hover {
-        color: $primary-color;
-    }
+  color: $link-color;
+  &:hover {
+    color: $primary-color;
+  }
+}
+
+.App {
+  height: 100vh;
+  background-color: $background-color;
 }

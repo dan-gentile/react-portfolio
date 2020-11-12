@@ -2,7 +2,7 @@
 
 .Projects {
   display: grid;
-  height: 100vh;
+  height: 100%;
   grid-template-columns: 1fr minmax(360px, 1fr) minmax(360px, 1fr) 1fr;
   grid-template-rows:
     75px minmax(340px, 1fr) minmax(340px, 1fr) minmax(340px, 1fr)

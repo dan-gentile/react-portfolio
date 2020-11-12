@@ -40,6 +40,7 @@ About Page
 Projects Page
 
 <img width="800" alt="Screen Shot 2020-11-11 at 5 22 45 PM" src="https://user-images.githubusercontent.com/68626350/98883085-9d463e80-2442-11eb-9726-e2e7b8d99f14.png">
+
 ## Questions
 
 If you have any questions please create an issue.
